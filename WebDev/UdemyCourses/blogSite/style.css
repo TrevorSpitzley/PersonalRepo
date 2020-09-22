@@ -1,0 +1,26 @@
+body {
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  margin: 20px auto;
+  /* padding-left: 1%;
+  padding-right: 1%; */
+  padding: 20px;
+  border: 20px solid #999999;
+  max-width: 700px;
+  width: 80%;
+}
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  color: cornflowerblue;
+  font-size: 85%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.firstPara {
+  border-left: 4px solid #999999;
+  padding-left: 4px;
+}
+.last {
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 15px;
+}

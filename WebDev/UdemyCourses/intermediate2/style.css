@@ -1,0 +1,20 @@
+body {
+  background-image: url(https://images4.alphacoders.com/306/30626.jpg);
+}
+.name {
+  color: aqua;
+  text-decoration-color: blue; 
+}
+.radioBtns {
+  color: blueviolet;  
+  background-color: burlywood;  
+  text-decoration-color: cornflowerblue;  
+} 
+.email {
+  border-radius: 24px;
+}
+h1 {
+  text-decoration-color: cornflowerblue;
+  background-color: crimson;
+  color: bisque;
+}

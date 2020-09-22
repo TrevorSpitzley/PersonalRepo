@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sounds</title>
+  <script type="text/javascript" src="paper-full.min .js"></script>
+  <script type="text/javascript" src="howler.min.js"></script>
+  <script type="text/paperscript" canvas="myCanvas">
+    var circles = [];
+    var colors = ["green", "blue", "red", "orange", "yellow", "purple", "white", "#2f7e65", "#8e7e4e", "#a12e39",
+                  "#c12a43", "#373737", "aquamarine", "blueviolet", "cadetblue", "cornflowerblue", "crimson", "darkmagenta",
+                  "dodgerblue", "darkslategrey", "darkslateblue", "darksalmon", "darkorchid", "darkcyan", "cyan", "darkkhaki"];
+    var keys = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+                "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var sounds = ['sounds/bubbles.mp3', 'sounds/clay.mp3', 'sounds/confetti.mp3', 'sounds/corona.mp3',
+    'sounds/dotted-spiral.mp3', 'sounds/flash-1.mp3', 'sounds/flash-2.mp3', 'sounds/flash-3.mp3', 'sounds/glimmer.mp3',
+     'sounds/moon.mp3', 'sounds/pinwheel.mp3', 'sounds/piston-1.mp3', 'sounds/piston-2.mp3', 'sounds/piston-3.mp3', 'sounds/prism-1.mp3', 'sounds/prism-2.mp3', 'sounds/prism-3.mp3', 'sounds/splits.mp3', 'sounds/squiggle.mp3', 'sounds/strike.mp3', 'sounds/suspension.mp3', 'sounds/timer.mp3', 'sounds/ufo.mp3', 'sounds/veil.mp3', 'sounds/wipe.mp3', 'sounds/zig-zag.mp3'];
+    
+     function onKeyDown(event){
+      var obj = event.key;
+      var index = keys.indexOf(event.key);
+
+      console.log(event.key, colors[index], keys[index], sounds[index]);
+      
+      var max = new Point(view.size.width, view.size.height);
+      var rand = Point.random();
+      var spot = max * rand;
+      var newCircle = new Path.Circle(spot, 500);
+      newCircle.fillColor = colors[index];
+      circles.push(newCircle);
+      var howl = new Howl({
+        src: [sounds[index]]
+      });
+      howl.play();
+    }
+    function onFrame(event){
+      if (circles.length > 0){
+        for (var i = 0; i < circles.length; i++){
+          circles[i].scale(.95);
+          circles[i].fillColor.hue += 1; 
+          if(circles[i].area < 1){
+            circles[i].remove(); // remove the circle from the canvas
+            circles.splice(i, 1); // remove the circle from the array
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="myCanvas" style="background: black;" resize>
+  
+  </canvas>
+</body>
+</html>

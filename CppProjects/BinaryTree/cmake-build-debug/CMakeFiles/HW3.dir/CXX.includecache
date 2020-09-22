@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/trevo/Desktop/CIS263/HW3/bst.h
+
+C:/Users/trevo/Desktop/CIS263/HW3/spitzley.cpp
+bst.h
+C:/Users/trevo/Desktop/CIS263/HW3/bst.h
+iostream
+-
+queue
+-
+

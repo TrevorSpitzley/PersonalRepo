@@ -1,0 +1,71 @@
+https://www.w3schools.com 
+
+**This is for HTML tags and delcaration help
+===============================================================================================
+https://www.w3schools.com/tags/default.asp 
+
+**The above link is for an alphabetical list
+**of other tags you can add for stuff like video/images/etc.
+===============================================================================================
+https://www.w3schools.com/colors/colors_picker.asp
+
+**This link is a color picker that will give you the hex code for any color you can
+**find on the wheel. It MUST be preceeded with a # symbol though. 
+===============================================================================================
+www.zamzar.com
+
+**Good website for audio file conversion**
+
+www.online-convert.com
+
+**On-site online conversion of audio files**
+
+www.html5test.com
+
+**This sight contains updated data on the most current web-browsers**
+===============================================================================================
+www.validator.w3.org/check
+
+**Will check that your website is up to date with HTML5 tags and coding practices**
+===============================================================================================
+www.jigsaw.w3.org/css-validator/validator
+
+**Website to validate css files for format
+===============================================================================================
+https://www.w3schools.com/css/css_rwd_viewport.asp
+
+**Site for adjusting css for all devices**
+===============================================================================================
+www.uigradients.com
+
+**Website for free and awesome looking gradient backgrounds. 
+===============================================================================================
+Paper.js (for animations) and Howler.js (for sounds) are amazing tools for an interactive
+and exciting website. They're also free!
+
+===============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

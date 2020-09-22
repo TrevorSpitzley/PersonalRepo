@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Document</title>
+ <style>
+   .show {
+     border: 2px dashed purple;
+   }
+   body {
+     padding-top: 70px;
+   }
+   .navbar-inverse .navbar-nav>li>a {
+     color: white;
+   }
+   .navbar-inverse .navbar-brand {
+     color: white;
+   }
+   .jumbotron {
+     color: #2c3e50;
+     background-color: #ecf0f1;
+   }
+   </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="basics.html" class="navbar-brand"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> IMGS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+      <ul class="nav navbar-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign up</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+      <p>A bunch of beautiful images that I didn't take(except for all of them!)</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="me.jpg" alt="Trevor on a mountain"></div></div>
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="mommy.jpg" alt="Mom on a mountain"></div></div>
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="beach.jpg" alt="Beach photo"></div></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="beach.jpg" alt="Beach photo"></div></div>
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="me.jpg" alt="Trevor on a mountain"></div></div>
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="mommy.jpg" alt="Mom on a mountain"></div></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="mommy.jpg" alt="Mom on a mountain"></div></div>
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="beach.jpg" alt="Beach photo"></div></div>
+      <div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="me.jpg" alt="Trevor on a mountain"></div></div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script src="bootstrap.js"></script>
+</body>
+</html>
